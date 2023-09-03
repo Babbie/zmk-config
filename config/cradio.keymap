@@ -194,9 +194,10 @@ ZMK_BEHAVIOR(copy_cut, tap_dance,
 
 // misc aliases
 #define CANCEL      &kp K_CANCEL             // cancel caps-word, num-word and smart-mouse
-#define DSK_PREV    &hmr RSHFT LG(LC(LEFT))  // previous desktop
-#define DSK_NEXT    &hmr LALT LG(LC(RIGHT))  // next     desktop
+#define PREV        &hmr RSHFT C_PREV
+#define NEXT        &hmr LGUI  C_NEXT
 #define VOL_DOWN    &hmr LCTRL C_VOL_DN
+#define VOL_UP      &hmr LALT  C_VOL_UP
 
 /* Mouse */
 
@@ -364,7 +365,7 @@ ZMK_LAYER(fnc,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp F12       &kp F7        &kp F8        &kp F9        ___             ___           ___           ___           ___           ___          
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp F11       &kp F4        &kp F5        &kp F6        ___             ___           &kp C_PREV    VOL_DOWN      &kp C_VOL_UP  &kp C_NEXT   
+    &kp F11       &kp F4        &kp F5        &kp F6        ___             ___           PREV          VOL_DOWN      VOL_UP        NEXT         
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp F10       &kp F1        &kp F2        &kp F3        ___             ___           ___           ___           ___           ___          
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
