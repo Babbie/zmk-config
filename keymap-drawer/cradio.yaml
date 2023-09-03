@@ -217,16 +217,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&trans U_WH_D U_WH_U'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&trans U_MS_L U_MS_D U_MS_U U_MS_R'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mwh SCROLL_VERT(-100)'
+  - '&mwh SCROLL_VERT(100)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -234,9 +227,24 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mmv MOVE_HOR(-1250)'
+  - '&mmv MOVE_VERT(1250)'
+  - '&mmv MOVE_VERT(-1250)'
+  - '&mmv MOVE_HOR(1250)'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&trans U_BTN2 U_BTN1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB2'
+  - '&mkp MB1'
 combos:
 - p: [1, 2]
   k: ESC
