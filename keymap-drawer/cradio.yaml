@@ -136,10 +136,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: MUTE, type: held}
   - PP
+  - MUTE
+  - {type: held}
+  - {t: ▽, type: trans}
   num:
   - {t: ▽, type: trans}
   - '7'
