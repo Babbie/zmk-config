@@ -15,8 +15,8 @@ layers:
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
   - {t: T, h: LSHFT}
-  - {t: G, h: LS(LC(LA(LGUI)))}
-  - {t: M, h: LS(LC(LA(LGUI)))}
+  - {t: G, h: LS(LC(LALT))}
+  - {t: M, h: LS(LC(LALT))}
   - {t: N, h: RSHFT}
   - {t: E, h: LCTRL}
   - {t: I, h: LALT}
@@ -50,8 +50,8 @@ layers:
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
   - {t: F, h: LSHFT}
-  - {t: G, h: LS(LC(LA(LGUI)))}
-  - {t: H, h: LS(LC(LA(LGUI)))}
+  - {t: G, h: LS(LC(LALT))}
+  - {t: H, h: LS(LC(LALT))}
   - {t: J, h: RSHFT}
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
@@ -85,7 +85,7 @@ layers:
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LSHFT, h: sticky}
-  - {t: LS(LC(LA(LGUI))), h: sticky}
+  - {t: LS(LC(LALT)), h: sticky}
   - PG DN
   - {t: LEFT, h: HOME}
   - {t: DOWN, h: LC(END)}
@@ -155,7 +155,7 @@ layers:
   - {t: '4', h: LALT}
   - {t: '5', h: LCTRL}
   - {t: '6', h: LSHFT}
-  - LS(LC(LA(LGUI)))
+  - LS(LC(LALT))
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
