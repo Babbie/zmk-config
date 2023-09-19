@@ -15,8 +15,8 @@ layers:
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
   - {t: T, h: LSHFT}
-  - G
-  - M
+  - {t: G, h: LS(LC(LA(LGUI)))}
+  - {t: M, h: LS(LC(LA(LGUI)))}
   - {t: N, h: RSHFT}
   - {t: E, h: LCTRL}
   - {t: I, h: LALT}
@@ -50,8 +50,8 @@ layers:
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
   - {t: F, h: LSHFT}
-  - G
-  - H
+  - {t: G, h: LS(LC(LA(LGUI)))}
+  - {t: H, h: LS(LC(LA(LGUI)))}
   - {t: J, h: RSHFT}
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
@@ -85,7 +85,7 @@ layers:
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LSHFT, h: sticky}
-  - {t: ▽, type: trans}
+  - {t: LS(LC(LA(LGUI))), h: sticky}
   - PG DN
   - {t: LEFT, h: HOME}
   - {t: DOWN, h: LC(END)}
@@ -155,7 +155,7 @@ layers:
   - {t: '4', h: LALT}
   - {t: '5', h: LCTRL}
   - {t: '6', h: LSHFT}
-  - {t: ▽, type: trans}
+  - LS(LC(LA(LGUI)))
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -190,18 +190,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - '&sys_reset'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - OUT BLE
+  - OUT USB
+  - '&bootloader'
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
