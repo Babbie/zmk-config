@@ -27,7 +27,7 @@
 #define THUMBS LH1 LH0 RH0 RH1                                              // thumbs
 
 #define QUICK_TAP_MS 175
-#define MEH LS(LC(LA(LGUI)))
+#define MEH LS(LC(LALT))
 
 &sk {  // sticky-key config
     release-after-ms = <900>;  // release after 0.6s
