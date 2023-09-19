@@ -122,10 +122,10 @@ layers:
   - F6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PREV
+  - {t: PREV, h: RSHFT}
   - {t: VOL DN, h: LCTRL}
-  - VOL UP
-  - NEXT
+  - {t: VOL UP, h: LALT}
+  - {t: NEXT, h: LGUI}
   - F10
   - F1
   - F2
