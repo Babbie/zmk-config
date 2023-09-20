@@ -28,6 +28,8 @@
 
 #define QUICK_TAP_MS 175
 #define MEH LS(LC(LALT))
+#define KANA INT_KANA
+#define KATA LANG_KATAKANA
 
 &sk {  // sticky-key config
     release-after-ms = <900>;  // release after 0.6s
@@ -353,7 +355,7 @@ ZMK_LAYER(qwe,
 
 ZMK_LAYER(nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    ___           ___           ___           ___           ___             &kp PG_UP     NAV_BSPC      NAV_DEL       ___           ___          
+    ___           ___           ___           ___           ___             &kp PG_UP     NAV_BSPC      NAV_DEL       &kp KANA      &kp KATA     
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &sk MEH         &kp PG_DN     NAV_LEFT      NAV_DOWN      NAV_UP        NAV_RIGHT    
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
