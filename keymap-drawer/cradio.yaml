@@ -77,20 +77,20 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - PG UP
-  - {t: BSPC, h: LC(BSPC)}
-  - {t: DEL, h: LC(DEL)}
-  - INT KANA
-  - LANG KATAKANA
+  - BSPC
+  - DEL
+  - LANG1
+  - LANG2
   - {t: LGUI, h: sticky}
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LSHFT, h: sticky}
   - {t: LS(LC(LALT)), h: sticky}
   - PG DN
-  - {t: LEFT, h: HOME}
-  - {t: DOWN, h: LC(END)}
-  - {t: UP, h: LC(HOME)}
-  - {t: RIGHT, h: END}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -121,7 +121,7 @@ layers:
   - F5
   - F6
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PP
   - {t: PREV, h: RSHFT}
   - {t: VOL DN, h: LCTRL}
   - {t: VOL UP, h: LALT}
@@ -136,10 +136,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PP
-  - MUTE
-  - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - CANCEL
   num:
   - {t: ▽, type: trans}
   - '7'
@@ -174,7 +174,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CANCEL
   sys:
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
