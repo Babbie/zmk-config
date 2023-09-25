@@ -79,8 +79,8 @@ layers:
   - PG UP
   - BSPC
   - DEL
-  - LANG1
-  - LANG2
+  - INT KANA
+  - LANG KATAKANA
   - {t: LGUI, h: sticky}
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
