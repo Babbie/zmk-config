@@ -250,8 +250,8 @@ MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
 
 /* Horizontal combos - left hand */
 ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(mouse, &smart_mouse,  LT2 LT1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
+//ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
 
 ZMK_COMBO(tab,   HRC_TAB,       LM3 LM2,     CMK QWE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(repeat,HRC_REPEAT,    LM2 LM1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
@@ -326,13 +326,13 @@ ZMK_LAYER(qwe,
 
 ZMK_LAYER(nav,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    ___           ___           ___           ___           ___             &kp PG_UP     &kp BSPC      &kp DEL       &kp KANA      &kp KATA     
+    ___           ___           ___           ___           ___             &kp ESC       &kp BSPC      &kp DEL       &kp KANA      &kp KATA     
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &sk MEH         &kp PG_DN     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT    
+    &sk LGUI      &sk LALT      &sk LCTRL     &sk LSHFT     &sk MEH         &kp TAB       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT    
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    ___           ___           ___           ___           ___             &kp INS       &kp TAB       &kp LT        &kp GT        ___          
+    ___           ___           ___           ___           ___             &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END      
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              ___           ___             ___           CANCEL                                                 
+                                              ___           ___             &key_repeat   CANCEL                                                 
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                          
 )
 
@@ -352,7 +352,7 @@ ZMK_LAYER(num,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     ___           &kp N7        &kp N8        &kp N9        ___             ___           ___           ___           ___           ___          
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI N0  &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &kp MEH         ___           ___           ___           ___           ___          
+    &hml LGUI N0  &hml LALT N4  &hml LCTRL N5 &hml LSHFT N6 &hml MEH N0     ___           ___           ___           ___           ___          
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___           &kp N1        &kp N2        &kp N3        ___             ___           ___           ___           ___           ___          
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
