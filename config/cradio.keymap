@@ -11,8 +11,8 @@
 
 /* Global settings */
 
-#define CMK 0
-#define QWE 1
+#define QWE 0
+#define CMK 1
 #define NAV 2
 #define FNC 3
 #define NUM 4
@@ -249,68 +249,56 @@ MAKE_HRM(hmr_lpar_lt, &kp, &lpar_lt, KEYS_L THUMBS)    // "    "   "   "
 MAKE_HRM(hmr_rpar_gt, &kp, &rpar_gt, KEYS_L THUMBS)    // "    "   "   "
 
 /* Horizontal combos - left hand */
-ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(mouse, &smart_mouse,  LT2 LT1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-//ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,     QWE CMK NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(mouse, &smart_mouse,  LT2 LT1,     QWE CMK NAV NUM, COMBO_TERM_FAST)
+//ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     QWE CMK NAV NUM, COMBO_TERM_FAST)
 
-ZMK_COMBO(tab,   HRC_TAB,       LM3 LM2,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(repeat,HRC_REPEAT,    LM2 LM1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(tab,   HRC_TAB,       LM3 LM2,     QWE CMK NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(repeat,HRC_REPEAT,    LM2 LM1,     QWE CMK NAV NUM, COMBO_TERM_FAST)
 
-ZMK_COMBO(cut,   &kp LC(X),     LB3 LB1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(copy,  &kp LC(INS),   LB3 LB2,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(paste, &kp LS(INS),   LB2 LB1,     CMK QWE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(cut,   &kp LC(X),     LB3 LB1,     QWE CMK NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(copy,  &kp LC(INS),   LB3 LB2,     QWE CMK NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(paste, &kp LS(INS),   LB2 LB1,     QWE CMK NAV NUM, COMBO_TERM_FAST)
 
 /* Horizontal combos - right hand */
-ZMK_COMBO(bspc,  &kp BSPC,      RT1 RT2,     CMK QWE NAV NUM, COMBO_TERM_FAST)
-ZMK_COMBO(del,   &kp DEL,       RT2 RT3,     CMK QWE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(bspc,  &kp BSPC,      RT1 RT2,     QWE CMK NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(del,   &kp DEL,       RT2 RT3,     QWE CMK NAV NUM, COMBO_TERM_FAST)
 
-ZMK_COMBO(lpar,  HRC_LPAR,      RM1 RM2,     CMK QWE     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rpar,  HRC_RPAR,      RM2 RM3,     CMK QWE     NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lpar,  HRC_LPAR,      RM1 RM2,     QWE CMK     NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rpar,  HRC_RPAR,      RM2 RM3,     QWE CMK     NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lt,    &kp LT,        RM1 RM2,             NAV    , COMBO_TERM_FAST)
 ZMK_COMBO(gt,    &kp GT,        RM2 RM3,             NAV    , COMBO_TERM_FAST)
 
-ZMK_COMBO(lbkt,  &kp LBKT,      RB1 RB2,     CMK QWE     NUM, COMBO_TERM_FAST)
-ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     CMK QWE     NUM, COMBO_TERM_FAST)
+ZMK_COMBO(lbkt,  &kp LBKT,      RB1 RB2,     QWE CMK     NUM, COMBO_TERM_FAST)
+ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     QWE CMK     NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,             NAV    , COMBO_TERM_FAST)
 ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,             NAV    , COMBO_TERM_FAST)
 
 /* Vertical combos - left hand */
-ZMK_COMBO(at,    &kp AT,        LT3 LM3,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(hash,  &kp HASH,      LT2 LM2,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(dllr,  &kp DLLR,      LT1 LM1,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(prcnt, &kp PRCNT,     LT0 LM0,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(at,    &kp AT,        LT3 LM3,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(hash,  &kp HASH,      LT2 LM2,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(dllr,  &kp DLLR,      LT1 LM1,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(prcnt, &kp PRCNT,     LT0 LM0,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
 
-ZMK_COMBO(grave, &kp GRAVE,     LM3 LB3,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(bslh,  &kp BSLH,      LM2 LB2,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(equal, &kp EQUAL,     LM1 LB1,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(tilde, &kp TILDE,     LM0 LB0,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(grave, &kp GRAVE,     LM3 LB3,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(bslh,  &kp BSLH,      LM2 LB2,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(equal, &kp EQUAL,     LM1 LB1,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(tilde, &kp TILDE,     LM0 LB0,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
 
 /* Vertical combos - right hand */
-ZMK_COMBO(caret, &kp CARET,     RT0 RM0,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(plus,  &kp PLUS,      RT1 RM1,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(star,  &kp STAR,      RT2 RM2,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(amps,  &kp AMPS,      RT3 RM3,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(caret, &kp CARET,     RT0 RM0,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(plus,  &kp PLUS,      RT1 RM1,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(star,  &kp STAR,      RT2 RM2,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(amps,  &kp AMPS,      RT3 RM3,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
 
-ZMK_COMBO(under, &kp UNDER,     RM0 RB0,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(minus, &kp MINUS,     RM1 RB1,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(fslh,  &kp FSLH,      RM2 RB2,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(pipe,  &kp PIPE,      RM3 RB3,     CMK QWE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(under, &kp UNDER,     RM0 RB0,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(minus, &kp MINUS,     RM1 RB1,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(fslh,  &kp FSLH,      RM2 RB2,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(pipe,  &kp PIPE,      RM3 RB3,     QWE CMK NAV NUM, COMBO_TERM_SLOW)
 
 /* Keymap */
 
 ZMK_CONDITIONAL_LAYER(FNC NUM, SYS)  // FN + NUM --> SYS
-
-ZMK_LAYER(cmk,
-//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp Q         &kp W         &kp F         &kp P         &kp B           &kp J         &kp L         &kp U         &kp Y         &kp SQT      
-//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &hml MEH G      &hmr MEH M    &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I   &hmr LGUI O  
-//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp Z         &kp X         &kp C         &kp D         &kp V           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl       
-//╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
-                                              &lt_spc NAV 0 SMART_NUM       &lt FNC RET   &smart_shft                                            
-//                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                          
-)
 
 ZMK_LAYER(qwe,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
@@ -319,6 +307,18 @@ ZMK_LAYER(qwe,
     &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &hml MEH G      &hmr MEH H    &hmr RSHFT J  &hmr LCTRL K  &hmr LALT L   &hmr LGUI SQT
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp Z         &kp X         &kp C         &kp V         &kp B           &kp N         &kp M         &comma_morph  &dot_morph    &qexcl       
+//╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
+                                              &lt_spc NAV 0 SMART_NUM       &lt FNC RET   &smart_shft                                            
+//                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                          
+)
+
+ZMK_LAYER(cmk,
+//╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+    &kp Q         &kp W         &kp F         &kp P         &kp B           &kp J         &kp L         &kp U         &kp Y         &kp SQT      
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &hml MEH G      &hmr MEH M    &hmr RSHFT N  &hmr LCTRL E  &hmr LALT I   &hmr LGUI O  
+//├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp Z         &kp X         &kp C         &kp D         &kp V           &kp K         &kp H         &comma_morph  &dot_morph    &qexcl       
 //╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯
                                               &lt_spc NAV 0 SMART_NUM       &lt FNC RET   &smart_shft                                            
 //                                          ╰─────────────┴─────────────╯ ╰─────────────┴─────────────╯                                          
@@ -362,7 +362,7 @@ ZMK_LAYER(num,
 
 ZMK_LAYER(sys,
 //╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &to CMK       &to QWE       ___           ___           ___          
+    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &to QWE       &to CMK       ___           ___           ___          
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     ___           ___           ___           ___           &sys_reset      &sys_reset    ___           ___           ___           ___          
 //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
