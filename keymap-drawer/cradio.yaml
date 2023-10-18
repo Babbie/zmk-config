@@ -1,40 +1,5 @@
 layout: {qmk_keyboard: ferris/sweep}
 layers:
-  cmk:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''''
-  - {t: A, h: LGUI}
-  - {t: R, h: LALT}
-  - {t: S, h: LCTRL}
-  - {t: T, h: LSHFT}
-  - {t: G, h: LS(LC(LALT))}
-  - {t: M, h: LS(LC(LALT))}
-  - {t: N, h: RSHFT}
-  - {t: E, h: LCTRL}
-  - {t: I, h: LALT}
-  - {t: O, h: LGUI}
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - K
-  - H
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
-  - {t: '?', s: '!'}
-  - {t: SPACE, h: nav, s: '&dot_spc'}
-  - {t: '&num_dance', h: num}
-  - {t: RET, h: fnc}
-  - {t: LSHFT, h: sticky, s: '&caps_word'}
   qwe:
   - Q
   - W
@@ -63,6 +28,41 @@ layers:
   - B
   - N
   - M
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
+  - {t: '?', s: '!'}
+  - {t: SPACE, h: nav, s: '&dot_spc'}
+  - {t: '&num_dance', h: num}
+  - {t: RET, h: fnc}
+  - {t: LSHFT, h: sticky, s: '&caps_word'}
+  cmk:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: LGUI}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - {t: G, h: LS(LC(LALT))}
+  - {t: M, h: LS(LC(LALT))}
+  - {t: N, h: RSHFT}
+  - {t: E, h: LCTRL}
+  - {t: I, h: LALT}
+  - {t: O, h: LGUI}
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
@@ -181,8 +181,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - cmk
   - qwe
+  - cmk
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -248,37 +248,37 @@ layers:
 combos:
 - p: [1, 2]
   k: ESC
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [2, 3]
   k: '&smart_mouse'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [11, 12]
   k: {t: TAB, h: LA(LCTRL)}
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [12, 13]
   k: {t: '&key_repeat', h: LS(LCTRL)}
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [21, 23]
   k: LC(X)
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [21, 22]
   k: LC(INS)
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [22, 23]
   k: LS(INS)
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [6, 7]
   k: BSPC
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [7, 8]
   k: DEL
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [16, 17]
   k: {t: (, h: RS(LCTRL), s: <}
-  l: [cmk, qwe, num]
+  l: [qwe, cmk, num]
 - p: [17, 18]
   k: {t: ), h: LA(LCTRL), s: '>'}
-  l: [cmk, qwe, num]
+  l: [qwe, cmk, num]
 - p: [16, 17]
   k: <
   l: [nav]
@@ -287,10 +287,10 @@ combos:
   l: [nav]
 - p: [26, 27]
   k: '['
-  l: [cmk, qwe, num]
+  l: [qwe, cmk, num]
 - p: [27, 28]
   k: ']'
-  l: [cmk, qwe, num]
+  l: [qwe, cmk, num]
 - p: [26, 27]
   k: '{'
   l: [nav]
@@ -299,49 +299,49 @@ combos:
   l: [nav]
 - p: [1, 11]
   k: '@'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [2, 12]
   k: '#'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [3, 13]
   k: $
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [4, 14]
   k: '%'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [11, 21]
   k: '`'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [12, 22]
   k: \
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [13, 23]
   k: '='
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [14, 24]
   k: '~'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [5, 15]
   k: ^
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [6, 16]
   k: +
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [7, 17]
   k: '*'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [8, 18]
   k: '&'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [15, 25]
   k: _
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [16, 26]
   k: '-'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [17, 27]
   k: /
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
 - p: [18, 28]
   k: '|'
-  l: [cmk, qwe, nav, num]
+  l: [qwe, cmk, nav, num]
