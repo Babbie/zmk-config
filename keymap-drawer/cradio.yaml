@@ -181,8 +181,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - qwe
-  - cmk
+  - {t: qwe, h: toggle}
+  - {t: cmk, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -218,8 +218,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mwh SCROLL_VERT(-100)'
-  - '&mwh SCROLL_VERT(100)'
+  - '&mwh SCRL_DOWN'
+  - '&mwh SCRL_UP'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
