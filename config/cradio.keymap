@@ -216,10 +216,10 @@ ZMK_BEHAVIOR(copy_cut, tap_dance,
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
-#define U_WH_U &mwh SCROLL_UP
-#define U_WH_D &mwh SCROLL_DOWN
-#define U_WH_L &mwh SCROLL_LEFT
-#define U_WH_R &mwh SCROLL_RIGHT
+#define U_WH_U &mwh SCRL_UP
+#define U_WH_D &mwh SCRL_DOWN
+#define U_WH_L &mwh SCRL_LEFT
+#define U_WH_R &mwh SCRL_RIGHT
 
 /* Combos */
 
