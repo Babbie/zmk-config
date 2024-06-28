@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: ferris/sweep}
+layout: {qmk_keyboard: ferris_rotated}
 layers:
   qwe:
   - Q
@@ -15,8 +15,8 @@ layers:
   - {t: S, h: LALT}
   - {t: D, h: LCTRL}
   - {t: F, h: LSHFT}
-  - {t: G, h: LS(LC(LALT))}
-  - {t: H, h: LS(LC(LALT))}
+  - {t: G, h: Sft+Ctl+ LALT}
+  - {t: H, h: Sft+Ctl+ LALT}
   - {t: J, h: RSHFT}
   - {t: K, h: LCTRL}
   - {t: L, h: LALT}
@@ -31,7 +31,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: SPACE, h: nav, s: '&dot_spc'}
+  - {t: SPACE 0, h: nav}
   - {t: '&num_dance', h: num}
   - {t: RET, h: fnc}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -50,8 +50,8 @@ layers:
   - {t: R, h: LALT}
   - {t: S, h: LCTRL}
   - {t: T, h: LSHFT}
-  - {t: G, h: LS(LC(LALT))}
-  - {t: M, h: LS(LC(LALT))}
+  - {t: G, h: Sft+Ctl+ LALT}
+  - {t: M, h: Sft+Ctl+ LALT}
   - {t: N, h: RSHFT}
   - {t: E, h: LCTRL}
   - {t: I, h: LALT}
@@ -66,7 +66,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - {t: SPACE, h: nav, s: '&dot_spc'}
+  - {t: SPACE 0, h: nav}
   - {t: '&num_dance', h: num}
   - {t: RET, h: fnc}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -85,7 +85,7 @@ layers:
   - {t: LALT, h: sticky}
   - {t: LCTRL, h: sticky}
   - {t: LSHFT, h: sticky}
-  - {t: LS(LC(LALT)), h: sticky}
+  - {t: Sft+Ctl+ LALT, h: sticky}
   - TAB
   - LEFT
   - DOWN
@@ -155,7 +155,7 @@ layers:
   - {t: '4', h: LALT}
   - {t: '5', h: LCTRL}
   - {t: '6', h: LSHFT}
-  - {t: '0', h: LS(LC(LALT))}
+  - {t: '0', h: Sft+Ctl+ LALT}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,19 +253,19 @@ combos:
   k: '&smart_mouse'
   l: [qwe, cmk, nav, num]
 - p: [11, 12]
-  k: {t: TAB, h: LA(LCTRL)}
+  k: {t: TAB, h: Alt+ LCTRL}
   l: [qwe, cmk, nav, num]
 - p: [12, 13]
-  k: {t: '&key_repeat', h: LS(LCTRL)}
+  k: {t: '&key_repeat', h: Sft+ LCTRL}
   l: [qwe, cmk, nav, num]
 - p: [21, 23]
-  k: LC(X)
+  k: Ctl+ X
   l: [qwe, cmk, nav, num]
 - p: [21, 22]
-  k: LC(INS)
+  k: Ctl+ INS
   l: [qwe, cmk, nav, num]
 - p: [22, 23]
-  k: LS(INS)
+  k: Sft+ INS
   l: [qwe, cmk, nav, num]
 - p: [6, 7]
   k: BSPC
@@ -274,10 +274,10 @@ combos:
   k: DEL
   l: [qwe, cmk, nav, num]
 - p: [16, 17]
-  k: {t: (, h: RS(LCTRL), s: <}
+  k: {t: (, h: Sft+ LCTRL, s: <}
   l: [qwe, cmk, num]
 - p: [17, 18]
-  k: {t: ), h: LA(LCTRL), s: '>'}
+  k: {t: ), h: Alt+ LCTRL, s: '>'}
   l: [qwe, cmk, num]
 - p: [16, 17]
   k: <
