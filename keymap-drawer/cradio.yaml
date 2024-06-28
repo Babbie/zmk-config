@@ -31,7 +31,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - '&lt_spc'
+  - {t: SPACE, h: nav}
   - {t: '&num_dance', h: num}
   - {t: RET, h: fnc}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -66,7 +66,7 @@ layers:
   - {t: ',', s: ;}
   - {t: ., s: ':'}
   - {t: '?', s: '!'}
-  - '&lt_spc'
+  - {t: SPACE, h: nav}
   - {t: '&num_dance', h: num}
   - {t: RET, h: fnc}
   - {t: LSHFT, h: sticky, s: '&caps_word'}
@@ -101,7 +101,7 @@ layers:
   - PG DN
   - PG UP
   - END
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '&key_repeat'
   - CANCEL
